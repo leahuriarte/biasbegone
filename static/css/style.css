@@ -1,6 +1,8 @@
 /****************************************TYPOGRAPHY ***************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 14px;
     color: #999999;
 }
