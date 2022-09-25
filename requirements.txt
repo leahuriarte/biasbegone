@@ -5,3 +5,4 @@ markupsafe==2.0.1
 itsdangerous==2.0.1
 werkzeug==2.0.3
 nltk==3.7
+cohere==2.4.2
