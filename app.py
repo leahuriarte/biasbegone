@@ -46,30 +46,30 @@ def hello():
         #find most inflammatory sentences
         offenders =[]
         if average_sentiment >= 0.5:
-            sentiment = "highly positive"
+            sentiment = "Highly Positive"
             for count in range(len(predictions)):
                 if int(predictions[count]) == 1:
                     offenders.append(sentences[count])
                     if len(offenders) > len(sentences)-2:
                         break
         elif average_sentiment > 0.25:
-            sentiment = "slightly positive"
+            sentiment = "Slightly Positive"
             for count in range(len(predictions)):
                 if int(predictions[count]) == 1:
                     offenders.append(sentences[count])
                     if len(offenders) > len(sentences)-2:
                         break
         elif average_sentiment > -0.25:
-            sentiment = "neutral"
+            sentiment = "Neutral"
         elif average_sentiment > -0.5:
-            sentiment = "slightly negative"
+            sentiment = "Slightly Negative"
             for count in range(len(predictions)):
                 if int(predictions[count]) == -1:
                     offenders.append(sentences[count])
                     if len(offenders) > len(sentences)-2:
                         break
         else:
-            sentiment = "highly negative"
+            sentiment = "Highly Negative"
             for count in range(len(predictions)):
                 if int(predictions[count]) == -1:
                     offenders.append(sentences[count])
