@@ -94,7 +94,7 @@ def hello():
             final.append(word)
         inputteds = " ".join(inputteds)
         final = " ".join(final)
-        if sentiment == "neutral":
+        if sentiment == "Neutral":
             return render_template('neutral.html', predictions=predictions, average=sentiment, inputted = inputted, final = final)
         else:
             return render_template('results.html', predictions=predictions, average=sentiment, inputted = inputted, final = final, offenders = offenders)
