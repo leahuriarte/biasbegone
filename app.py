@@ -77,10 +77,10 @@ def hello():
                         break
         
         #find and replace emotionally charged words
-        inputted = replacer(inputted)
-        inputted = inputted.split()
+        inputteds = replacer(inputted)
+        inputteds = inputteds.split()
         final = []
-        for word in inputted:
+        for word in inputteds:
             response = co.classify(
                 model='4f37bed0-dac2-44e2-926a-888fc5dcace4-ft',
                 inputs=[word])
