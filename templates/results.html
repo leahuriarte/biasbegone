@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="static/css/owl.theme.css">
     <link rel="stylesheet" href="static/css/style.css">
     
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   </head>
  
   <style>
@@ -41,9 +41,9 @@
     <body>
     <h1 class="cta-heading text-white">{{ average }}</h1>
  
-    <div class="text-white slider-para">
+    <div class="text-white slider-para" style="font-family: 'Rubik', sans-serif;">
         <br>
-        <h><b>The original article is {{ average }} towards its subject. Make sure to remember this when you read it and consider why a new outlet would want you to feel a certain way about this subject.</b></h>
+        <h><b>The original article is {{ average }} towards its subject. Make sure to remember this when you read it and consider why a news outlet would want you to feel a certain way about this subject.</b></h>
         <p>    </p>
         <br>
         <h><b>Here is our less inflamatory version: </b></h> <h>{{final}}</h>
