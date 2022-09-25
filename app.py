@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 import cohere
 from cohere.classify import Example
-co = cohere.Client('CSrnecfjDvIop7lxfsLyR226fQ6wTmQe7rpGmMKG')
+co = cohere.Client('I3SFsLfAz3Yisy8s0CWSO0iIBDot9WEKdBHMH1F2')
 
 @app.route('/')
 def form():
