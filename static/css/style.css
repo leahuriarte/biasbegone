@@ -6,6 +6,10 @@ body{
     font-size: 14px;
     color: #999999;
 }
+
+h2, p, h, h1{
+    font-family: 'Rubik', sans-serif;
+}
  
 .btn{
     font-family: 'Montserrat', sans-serif;
@@ -30,65 +34,6 @@ body{
     font-size: 18px;
     vertical-align: middle;
 }
-.navbar{
-    background-color: transparent !important;
-    border-color: transparent !important;
-    border:0px;
-    padding-top: 30px;
-    transition: all .5s ease;
-}
-.navbar-brand{
-    padding: 0;
-}
-.navbar-brand img{
-    max-height: 50px;
-}
-.navbar-default .navbar-nav>li>a {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-}
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #fff;
-    background-color: transparent;
-}
-.navbar-default .navbar-nav>li>a:hover{
-    color: #e86c6c;
-}
-.navbar-nav>li>a.btn-navbar:hover{
-    color: #fff;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: transparent;
-}
-.navbar-nav>li>a.btn-navbar{
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.navbar-divider{
-    width:100%;
-    height: 1px;
-    border:0px;
-    background-color: rgba(255,255,255,0.1);
-    transition: all .5s ease;
-}
-.colored-nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.colored-nav .navbar-divider{
-    display: none;
-}
-/* .cta{
-    color: #fff;
-}
-.cta-btn-group{
-    margin-top: 15px;
-}
-.cta-btn-group .btn{
-    margin: 10px;
-} */
 .btn-orange.focus, .btn-orange:focus,.btn-orange.active, .btn-orange:active {
     color: #fff;
     background-color: #286090;
@@ -134,28 +79,6 @@ header{
     color: #fff;
 }
  
-/*******************************************FEATURE**************************************************/
-/*.feature{
-    position: relative;
-    overflow:hidden;
-}
-.feature-right-image{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}*/
-.feature-wiget{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.feature-wiget h4, .feature-wiget i{
-    color: #433b88;
-}
-.feature-wiget i{
-    font-size: 36px;
-}
-.feature-wiget h4{
-    text-transform: uppercase;
 }
 .bottom-line{
     position: relative;
@@ -184,105 +107,13 @@ header{
 .card-block{
     padding:4rem;
 }
-/*******************************************TESTIMONIAL**********************************************/
-.heading-wraper{
-    margin-bottom: 120px;
-}
-.heading-wraper .heading-devider{
-    margin:0 auto;
-    width: 100px;
-    height: 2px;
-    border:0px;
-}
-.testimonial-container{
-    background-color: #fff;
-    box-shadow: 0px 8px 21px 0px rgba(26, 31, 66, 0.29);
-}
-.testimonial-content{
-    padding: 2rem 8rem;
-    position: relative;
-    top: -45px;
-    color: #5a5a5a;
-    font-weight: 600;
-}
-.testimonial-speech{
-    font-size: 16px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    color: #5a5a5a;
-}
-.testimonial-container .client-details{
-    position: relative;
-    top: -45px;
-}
-.testimonial-container .client-details img{
-    border-radius: 50%;
-    margin-bottom: 25px;
-}
-.client-designation{
-    margin-bottom: 0px;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #999999;
-    font-family: 'Montserrat', sans-serif;
-}
-.client-name{
-    margin-bottom: 0px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-ul.social-list{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-ul.social-list li{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-ul.social-list li a{
-    display: block;
-    font-size: 2rem;
-    padding: 0.2rem;
-    color: #999999;
-}
-ul.social-list li a:hover, ul.social-list li a:focus{
-    color: #0e153a;
-}
- 
+
 .owl-wrapper-outer{
     padding-top: 60px;
     margin-top: -60px;
 }
-/*******************************************CUSTOMER SUPPORT*****************************************/
-.customer-support-content{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-/*******************************************SUBSCRIPTION*********************************************/
-.sunscription-wraper-outer{
-    box-shadow: 0px 8px 21px 0px rgba(191, 195, 198, 0.29);
-}
-.subscription-wraper p{
-    color: #5a5a5a;
-}
-.subscription-form .form-group{
-    width: 65%;
-    margin: 0 auto;
-}
-.subscription-form .form-control{
-    border-radius: 50px;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    height: 40px;
-}
-.newsletter{
-    background-color: #f1f6fa
-}
- 
+
+
 /*******************************************FOOTER***************************************************/
 .footer-list-wiget h4{
     color: #433b88;
