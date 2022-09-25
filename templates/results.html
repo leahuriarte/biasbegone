@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.css">
+    <link rel="stylesheet" href="static/css/owl.theme.css">
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+ 
+  <style>
+    h1 {
+        background-image: -webkit-linear-gradient(35deg, rgb(232,88,137) 0%, rgb(232,98,123) 32%, rgb(232,108,108) 100%);
+        background-image: -o-linear-gradient(35deg, rgb(232,88,137) 0%, rgb(232,98,123) 32%, rgb(232,108,108) 100%);
+        background-image: linear-gradient(125deg, rgb(232,88,137) 0%, rgb(232,98,123) 32%, rgb(232,108,108) 100%);
+        box-shadow: 0px 8px 27px 0px rgba(116, 44, 69, 0.21);
+        border-radius: 15px;
+        text-align: center;
+    }
+    body {
+        background-image: -webkit-linear-gradient(35deg, rgb(19, 38, 52) 0%,rgb(19, 38, 52) 32%, rgb(19, 38, 52) 100%);
+        background-image: -o-linear-gradient(35deg, rgb(19, 38, 52) 0%,rgb(19, 38, 52) 32%, rgb(19, 38, 52) 100%);
+        background-image: linear-gradient(125deg, rgb(19, 38, 52) 0%,rgb(19, 38, 52) 32%, rgb(19, 38, 52) 100%);
+        padding-left: 100px; padding-right: 100px;
+    }
+    </style>
+    <body>
+    <h1 class="cta-heading text-white">{{ average }}</h1>
+ 
+    <div class="text-white slider-para">
+        <br>
+        <h><b>The original article is {{ average }} towards its subject. Make sure to remember this when you read it and consider why a new outlet would want you to feel a certain way about this subject.</b></h>
+        <p>    </p>
+        <br>
+        <h><b>Here is our less inflamatory version: </b></h> <h>{{final}}</h>
+        <p>    </p>
+        <br>
+        <h><b>Here is the original version: </b></h> <h>{{inputted}}</h>
+        <p></p>
+        <br>
+        <h><b>The most potentially emotionally manipulative sentences are: </b></h> 
+        <p></p>
+
+        {% for i in range(offenders|length) %}
+            <ul> ∙ {{ offenders[i] }}.</ul>
+            <p></p>
+
+        {% endfor %}
+        <p></p>
+        <br>
+        <!-- <h>{{ offenders[0] }}</h>
+        <p> and </p>
+        <h>{{ offenders[1] }}</h> -->
+    </div>
+ 
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
+ 
