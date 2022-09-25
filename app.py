@@ -92,7 +92,7 @@ def hello():
                 except IndexError:
                     errors = True
             final.append(word)
-        inputted = " ".join(inputted)
+        inputteds = " ".join(inputteds)
         final = " ".join(final)
         if sentiment == "neutral":
             return render_template('neutral.html', predictions=predictions, average=sentiment, inputted = inputted, final = final)
