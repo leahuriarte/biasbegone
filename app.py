@@ -35,7 +35,7 @@ def hello():
         average_sentiment = 0
         for sentence in sentences:
             response = co.classify(
-                model='4f37bed0-dac2-44e2-926a-888fc5dcace4-ft',
+                model='e1fb5f67-7289-4ef7-a6c5-ac474399566a-ft',
                 inputs=[sentence])
             prediction = response.classifications[0].prediction
             print(response.classifications[0].prediction)
@@ -82,7 +82,7 @@ def hello():
         final = []
         for word in inputteds:
             response = co.classify(
-                model='4f37bed0-dac2-44e2-926a-888fc5dcace4-ft',
+                model='e1fb5f67-7289-4ef7-a6c5-ac474399566a-ft',
                 inputs=[word])
             prediction = int(response.classifications[0].prediction)
             print(word, prediction)
